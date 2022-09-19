@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: latin;
+
+
+}
+
+
+hr {
+    /* height: 0.5px; */
+    background-color: #ffffff;
+}
+
+/* ------------------------------------------------------------------container */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.left {
+    width: 70%;
+}
+
+.left-header {
+
+    height: 12rem;
+
+}
+
+.blckBoxLeft {
+    position: absolute;
+    top: 0px;
+    width: 6rem;
+    background-color: #202020;
+    height: 14rem;
+    color: rgb(0, 0, 0);
+}
+
+.centerBox {
+
+    margin-left: 1rem;
+    background-color: #FFD801;
+    margin-bottom: 1.2rem;
+    height: 8rem;
+    position: relative;
+    top: 1rem;
+
+
+}
+
+.name {
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+/* ----------------------------------------------------------------------Left Main */
+.left-main {
+
+    display: flex;
+
+}
+
+.details {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+#about {
+    margin-top: 2rem;
+    letter-spacing: 0.5px;
+
+}
+
+.profile {
+    height: 14rem;
+
+
+}
+
+/* ---------------------------------------------------------------Work-expeiance */
+.workExperience {
+    margin-top: 2rem;
+    height: 32rem;
+    display: flex;
+
+
+
+
+}
+
+.shape {
+    text-align: center;
+    color: white;
+    position: relative;
+    width: 54px;
+    height: 40px;
+    background-color: #202020;
+}
+
+#shape1 {
+    margin-top: 70px;
+}
+
+#shape2 {
+    margin-top: 59px;
+
+}
+
+#shape3 {
+    margin-top: 72px;
+
+}
+
+.triangle {
+
+    position: relative;
+    top: -40px;
+    left: 53px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #202020;
+}
+
+.circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: relative;
+    background-color: black;
+    top: -70px;
+    left: 113px;
+}
+
+#circle2 {
+    top: -69px;
+}
+
+#circle3 {
+    top: -69px;
+}
+
+.fa-solid {
+    font-size: 2rem;
+}
+
+
+.expeiance-sections {
+    margin-left: 4rem;
+
+    border-left: 5px solid black;
+}
+
+.exp {
+    margin-top: 5rem;
+    margin-left: 20px;
+    letter-spacing: 0.5px;
+
+}
+
+/* ---------------------Bold work ex Title */
+#e-cell {
+    font-weight: bold;
+}
+
+#CA {
+    font-weight: bold;
+}
+
+#CS {
+    font-weight: bold;
+}
+
+.yellow {
+    background-color: #FFD801;
+    height: 62rem;
+    width: 6rem;
+}
+
+
+/* --------------------------------------------------------------------Aside */
+.right {
+
+    background-color: #202020;
+    width: 30%;
+}
+
+.hr-outline {
+    margin-left: 5rem;
+    margin-right: 8rem;
+    width: 8rem;
+}
+
+
+.right-heading {
+
+    font-size: 20px;
+    margin-left: 22px;
+}
+
+.right-header {
+    height: 11rem;
+    background-color: #202020;
+    margin-top: 33px;
+}
+
+.pic {
+
+
+    border: 2px solid #FFD801;
+    height: 8rem;
+    top: 3rem;
+    width: 15rem;
+    margin-top: 3rem;
+    border-left: 0px;
+
+}
+
+.photo {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-left: 3.5rem;
+    padding: 10px;
+    margin-right: 3rem;
+
+}
+
+
+.right-main {
+    display: flex;
+    flex-direction: column;
+    height: 22rem;
+
+
+}
+
+/* ---------------------------------------------------------------------------Contacts */
+.contacts {
+    background-color: #202020;
+    height: 19rem;
+    color: #FFD801;
+    text-align: center;
+    margin-top: -25px;
+
+}
+
+/*---------------------------------------------------------------------// Flag */
+
+.left-flag {
+    display: inline-block;
+    position: relative;
+    top: 33px;
+    left: -68px;
+    height: 31px;
+    width: 18px;
+}
+
+.flaa {
+    left: 57px;
+}
+
+
+.right-flag {
+    display: inline-block;
+    position: relative;
+    top: -28px;
+    left: 95px;
+    height: 31px;
+    width: 18px;
+}
+
+.flaa2 {
+    left: 218px;
+}
+
+
+
+/* --------------------------------------------------------------------Contact Section */
+.contact-section {
+    padding: 10px;
+}
+
+.small-yellow {
+    width: 2rem;
+    height: 2px;
+    position: relative;
+    background-color: #FFD801;
+    left: 116px;
+
+}
+
+#small-yellow1 {
+    top: -8px
+}
+
+#small-yellow2 {
+    top: 1px;
+}
+
+#small-yellow3 {
+    top: -5px;
+}
+
+
+
+.education {
+    background-color: #202020;
+    margin-top: 3rem;
+    height: 20rem;
+    color: #FFD801;
+    text-align: center;
+
+
+}
+
+.edu {
+
+    padding: 10px;
+
+}
+
+/*------------------------------------------------------------------ Skills Section */
+.skills {
+    background-color: #202020;
+    height: 20rem;
+    color: #FFD801;
+
+    margin-top: 10px;
+
+}
+
+.skills-section {
+    padding: 12px;
+    background-color: #FFD801;
+
+    color: black;
+    margin-top: 17px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+
+}
+
+
+#skill-heading {
+    text-align: center;
+    color: white;
+}
+
+
+#hr-skills1 {
+    margin-left: 60px;
+    height: 10px;
+    margin-top: -15px;
+    background-color: black;
+    width: 170px;
+
+}
+
+#hr-skills1 {
+    margin-left: 60px;
+    height: 10px;
+    margin-top: -15px;
+    background-color: black;
+    width: 9rem;
+
+}
+
+#hr-skills2 {
+    margin-left: 60px;
+    height: 10px;
+    margin-top: -15px;
+    background-color: black;
+    width: 9rem;
+}
+
+#hr-skills3 {
+    margin-left: 60px;
+    height: 10px;
+    margin-top: -15px;
+    background-color: black;
+    width: 8rem;
+
+}
+
+#hr-skills4 {
+    margin-left: 60px;
+    height: 10px;
+    margin-top: -15px;
+    background-color: black;
+    width: 8rem;
+
+}
+
+
+
+@media only screen and (max-width: 1260px) {
+    html {
+        background-color: #202020;
+    }
+
+    .left {
+        width: 100vw;
+        height: 50%;
+        background-color: white;
+
+    }
+
+    .right {
+        width: 100vw;
+        height: 50%;
+        justify-content: center;
+        background-color: #2020;
+    }
+
+    .right-header {
+        display: flex;
+        justify-content: center;
+        height: 15rem;
+    }
+
+    .pic {
+        border: 2px solid #FFD801;
+
+    }
+
+    .photo {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        margin-left: 4.5rem;
+        padding: 10px;
+        margin-right: 3rem;
+
+    }
+
+
+    .flag {
+        display: none;
+    }
+
+    #hr-skills1 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 170px;
+    }
+
+    #hr-skills1 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 80vw;
+    }
+
+    #hr-skills2 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 75vw;
+    }
+
+    #hr-skills3 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 60vw;
+    }
+
+    #hr-skills4 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 60vw
+    }
+
+    .small-yellow {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+
+        flex-direction: column;
+
+
+    }
+
+    .left {
+        width: 100vw;
+        height: 50%;
+
+    }
+
+    .right {
+        width: 100vw;
+        height: 50%;
+        justify-content: center;
+
+    }
+
+    .right-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile {
+        height: 20rem;
+
+
+    }
+
+    .pic {
+        border: 2px solid #FFD801;
+
+    }
+
+    .workExperience {
+        margin-top: 2rem;
+        height: 40rem;
+
+
+
+    }
+
+    .expeiance-sections {
+        height: 30rem;
+        margin-left: 4rem;
+        border-left: 5px solid black;
+    }
+
+
+    #hr-skills1 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 80vw;
+    }
+
+    #hr-skills2 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 75vw;
+    }
+
+    #hr-skills3 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 60vw;
+    }
+
+    #hr-skills4 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 60vw
+    }
+
+
+
+}
+
+@media only screen and (max-width: 550px) {
+    .profile {
+        height: 20rem;
+
+
+
+    }
+
+    .right {
+        justify-content: center;
+    }
+
+    .right-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .workExperience {
+        margin-top: 2rem;
+        height: 45rem;
+
+
+
+    }
+
+    .pic {
+        border: 2px solid #FFD801;
+
+    }
+
+    #hr-skills1 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 70vw;
+    }
+
+    #hr-skills2 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 65vw;
+    }
+
+    #hr-skills3 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 50vw;
+    }
+
+    #hr-skills4 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 50vw
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .right {
+        justify-content: center;
+    }
+
+    .right-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile {
+        height: 25rem;
+
+
+
+    }
+
+    .workExperience {
+        margin-top: 2rem;
+        height: 45rem;
+
+
+
+    }
+
+    #hr-skills1 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 70vw;
+    }
+
+    #hr-skills2 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 65vw;
+    }
+
+    #hr-skills3 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 50vw;
+    }
+
+    #hr-skills4 {
+        margin-left: 60px;
+        height: 10px;
+        margin-top: -15px;
+        background-color: black;
+        width: 50vw
+    }
+}
+
+
+/* -----------------------------------------------------------------------------Fonts */
+
+.font1 {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+
+}
+
+.font2 {
+    font-size: 1rem;
+
+
+}
+
+.font2-white {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.font3-white {
+    font-size: 1rem;
+    color: white;
+}
+
+.font3 {
+    padding: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.font4 {
+
+
+    font-size: 0.8rem;
+    color: #b3b3b3;
+
+}
+
+.blackfont {
+    color: #202020
+}
+
+.greyfont {
+
+    color: #b3b3b3;
+}
+
+.right-fonts {
+    font-size: 2.2rem;
+}

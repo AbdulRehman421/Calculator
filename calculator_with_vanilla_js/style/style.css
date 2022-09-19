@@ -1,6 +1,6 @@
 body{
-
-}
+    background: rgb(255,252,202);
+    background: linear-gradient(90deg, rgba(255,252,202,1) 39%, rgba(137,211,255,1) 100%);}
 .container{
     margin-top: 5%;
     border: 2px solid black;
