@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="script/model.js" defer></script>
+  <script src="script/service.js" defer></script>
+  <script src="script/render.js" defer></script>
+  <script src="script/main.js" defer></script>
+  <title>Form Builder</title>
+</head>
+
+<body>
+  <div class="edit_form_elements container2" id="">
+    <!--  -->
+  </div>
+
+  <main>
+
+    <header>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Reset</a>
+        <a href="">Contact us</a>
+        <a href="">About Us</a>
+      </nav>
+
+    </header>
+    <div class="container">
+
+      <div class="left-container">
+        <p>Custom Editiors</p>
+        <div class="left_heading">
+          <p class="blue_font">Form Elements</p>
+
+          <div class="inputs">
+
+            <div class="input">
+              <div class="input-elements">
+                <i class="fa-regular fa-image"></i><br>
+                <section draggable="true" id="logo">
+                  <p>Logo</p>
+                </section>
+              </div>
+              <div class="input-elements">
+                <i class="fa-solid fa-pen-to-square"></i><br>
+                <section draggable="true" id="add-input">
+                  <p>Input</p>
+                </section>
+              </div>
+            </div>
+            <div class="input">
+              <div class="input-elements">
+                <i class="fa-regular fa-circle-dot"></i><br>
+                <section draggable="true" id="add-radio">
+                  <p>Radio</p>
+                </section>
+              </div>
+              <div class="input-elements">
+                <i class="fa-regular fa-square-check"></i><br>
+                <section draggable="true" id="add-check">
+                  <p>Check</p>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body-selection">
+          <div class="background-selection">
+            <div class="red color_box"></div>
+            <div class="green color_box"></div>
+            <div class="grey color_box"></div>
+            <div class="margin-top logo_1"><input type="color"></div>
+            <!-- <div class="margin-top"><button>Apply Background</button></div> -->
+          </div>
+          <div class="background-selection">
+            <div class="margin-top logo_2"><input type="file"> </div>
+            <!-- <div class="margin-top">   <button>Apply Background</button></div>  -->
+          </div>
+        </div>
+
+        <div class="fo-selection">
+          <div class="footer-selection">
+            <div class="red color_box"></div>
+            <div class="green color_box"></div>
+            <div class="grey color_box"></div>
+            <div class="margin-top logo_3"> <input type="color"></div>
+            <!-- <div class="margin-top">  <button>Apply Footer</button></div> -->
+          </div>
+
+          <div class="footer-selection">
+            <div class="margin-top"> <input type="file"></div>
+
+            <!-- <div class="margin-top">  <button>Apply Footer</button></div> -->
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="right-container">
+
+        <div class="right-top-container">
+          <div class="preview_submit_cancel_btn">
+
+            <button id="btn-final-submit" class="green save_form" id="save_btn">Save</button>
+            <button id="btn-preview" class="blue">Preview</button>
+            <button id="btn-cancel" class="grey">Cancel</button>
+          </div>
+          <div class="header_logo">
+            <div class="right-top-logo logos"></div>
+            <div class="right-top-logo logos"></div>
+            <div class="right-top-logo logos"></div>
+          </div>
+
+        </div>
+
+        <div class="right-main-container">
+          <div class="right-main">
+            <div class="right-body-img">
+              <p id="background_description">Select your Background Image</p>
+              <input type="file" id="background_cover">
+              <img src="" alt="" id="banner_img">
+            </div>
+            <div class="right-footer">
+              <div class="footer-components logos"></div>
+              <div class="footer-components logos"></div>
+              <!-- <div class="footer-components logos"></div> -->
+            </div>
+          </div>
+          <div class="right-element-box">
+            <div class="form-elements">
+
+            </div>
+            <div>
+              <button type="submit" id="register" onclick="register()">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

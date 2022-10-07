@@ -1,0 +1,109 @@
+@import "mixin";
+.left-container {
+    width: 30%;
+    // border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: sticky;
+    top :0px;
+    // height: 90%;
+    .left_heading{
+        width: 100%;   
+         background-color: rgb(248, 248, 248);
+        //  height: 268px;
+        
+    }   
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+
+
+        .input {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            width: 100%;    
+            background-color: rgb(255, 255, 255);
+           
+            
+
+            .input-elements {
+                height: 100%;
+                width: 45%;
+                display: flex;
+                justify-items: center;
+            
+                justify-content: center;
+
+                section {
+                    margin-top: 1rem;
+                    border: 0.1px solid black;
+                    height: 6rem;
+                    width: 9rem;
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0);
+                    cursor:grab;
+                 p{
+                    margin: 3rem;
+                 }
+                }
+            }
+        }
+    }
+    .body-selection {
+        @include flex-col;
+        // @include center;
+        // @include center;
+        // @include flex-col;
+        // border: 2px solid rgb(0, 0, 0);
+        height: 7rem;
+        width: 100%;
+        justify-content: space-around;
+        background-color: rgb(255, 255, 255);
+
+        .background-selection {
+            display: flex;
+            flex-direction: row;
+         justify-content: center;
+         .color_box{
+              
+            margin: 2%;
+            margin-top: 5%;
+             height: 1.2rem;
+             width: 1.2rem;
+         }
+
+            button {
+                width: 9rem;
+                height: 3rem;
+                text-align: center;   
+                // border: 1px solid;
+            }
+            .margin-top {
+                margin-top: 4%;
+            }
+        }
+    }
+
+    .fo-selection {
+        @extend .body-selection;
+
+        .footer-selection {
+            
+            @extend  .background-selection;
+           
+          
+          
+            
+        }
+    }
+}
+
+.blue_font{
+    color: blue;
+    font-size: 1.5rem;
+}

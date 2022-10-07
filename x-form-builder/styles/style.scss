@@ -1,0 +1,239 @@
+* {
+    padding: 0px;
+    margin: 0px;
+   
+    color: black;
+}
+@import "mixin";
+
+.edit_button{
+    width: 100px;
+    height: 35px;
+    position: relative;
+    left: 164px;
+    border-radius: 10px;
+}
+main {
+    background-color: rgb(246, 249, 255);
+    @include flex-col;
+    @import "header";
+    .container {
+        display: flex;
+
+        @import "left-container";
+        @import "right-section";
+    }
+}
+
+.text_box{
+ 
+    height: 10%;
+    margin: 2rem;
+    display: flex;
+    // align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.btn{
+height: 1.5rem;
+width: 1.5rem;
+}
+
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.grey{
+    background-color: darkgray;
+    color: white;
+}
+.blue{
+    background-color: rgb(81, 125, 255);
+    color: white;
+}
+
+
+.flex{
+display: flex;
+justify-content: space-between;
+}.fa-solid{
+    background-color: transparent;
+}
+
+.input_values{
+    width: 100%;
+}
+
+
+//----------------------------------- pop-up
+.edit_form_elements{
+    // width: 35rem;
+    // height: 29rem;
+    // display: flex;
+    // flex-direction: column;
+    // margin: 1rem;
+    // left: 25%;
+    // top: 5%;
+    // align-items: center;
+    // position: absolute;
+    // border: 1px solid black;
+    // display: none;
+    // background-color:rgb(203, 203, 203);
+    .edit_popup {
+
+        border-radius: 4px;
+        top: 0;
+        width: 35%;
+        background-color: white;
+        position: absolute;
+        z-index: 3;
+        margin-top: 10%;
+        margin-left: 35%;
+        display: none;
+        border: 2px solid black;
+
+
+        .popup_h1 {
+            background-color: rgb(71, 135, 231);
+            height: 60px;
+        }
+
+        .p_popup {
+            background-color: white;
+            color: black;
+            margin-top: 2%;
+            margin-left: 3%;
+        }
+
+        .input_popup {
+            background-color: white;
+            color: black;
+            width: 90%;
+            height: 30px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 3%;
+            border-radius: 5px;
+            border-color: grey;
+        }
+
+        .Checkbox {
+
+        display: flex;
+        }
+
+        .btn_popup_s {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(71, 135, 231);
+            border: 0;
+            border-radius: 3px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            margin-left: 60%;
+            cursor: pointer;
+
+        }
+
+        .btn_popup_c {
+            @extend .btn_popup_s;
+            background-color: grey;
+            width: 60px;
+            margin-left: 0%;
+        }
+
+    }
+ 
+  
+
+.edit_form_content{
+    margin: 5px;
+    padding: 5px;
+    height: 18%;
+    font-size: 1rem;
+  
+    p{
+        width: 551px;
+        height: 2rem;
+       
+    }
+
+   
+
+    input{
+        width: 33rem;
+        height: 1.5rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+
+    }
+
+    #edit_chk_box{
+        margin: 1rem;
+        font-size: 1.5rem;
+        width: 40%;
+        position: relative;
+       
+        right: 76px;
+    }
+    // select{
+    //   
+    // } working on ws
+    }
+   
+}
+
+
+.fa-regular, .far {
+    font-weight: 500;
+    position: relative;
+    top: 33px;
+    left: 77px;
+    font-size: 21px;}
+
+    .fa-solid{
+        font-weight: 500;
+        position: relative;
+        top: 33px;
+        left: 77px;
+        font-size: 21px;}
+    
+  
+#pop_up_select{
+    width: 98%;
+        height: 2rem;
+        border-radius: 10px;
+}
+
+#pop_up_check{
+margin: 1rem;
+}
+
+.check_close_btn{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: relative;
+    
+    left: 88px;
+    margin: 1rem;
+}
+
+// .btn1{
+//     margin: 0.5rem;
+// }
+.fa-xmark{
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+.pen{
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+#edit_element{
+    margin: 0.5rem;
+}

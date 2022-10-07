@@ -1,0 +1,376 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: black;
+}
+
+.edit_button {
+  width: 100px;
+  height: 35px;
+  position: relative;
+  left: 164px;
+  border-radius: 10px;
+}
+
+main {
+  background-color: rgb(246, 249, 255);
+  display: flex;
+  flex-direction: column;
+}
+main header nav {
+  display: flex;
+  justify-content: end;
+  height: 10%;
+  padding: 10px;
+  box-shadow: 1px 2px rgb(206, 203, 203);
+}
+main header nav a {
+  padding: 1rem;
+}
+main .hidden {
+  display: none;
+}
+main #show {
+  display: block;
+}
+main .container {
+  display: flex;
+}
+main .container .left-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+}
+main .container .left-container .left_heading {
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+}
+main .container .left-container .inputs {
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+}
+main .container .left-container .inputs .input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+main .container .left-container .inputs .input .input-elements {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+main .container .left-container .inputs .input .input-elements section {
+  margin-top: 1rem;
+  border: 0.1px solid black;
+  height: 6rem;
+  width: 9rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: grab;
+}
+main .container .left-container .inputs .input .input-elements section p {
+  margin: 3rem;
+}
+main .container .left-container .body-selection, main .container .left-container .fo-selection {
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+}
+main .container .left-container .body-selection .background-selection, main .container .left-container .fo-selection .background-selection, main .container .left-container .fo-selection .footer-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .container .left-container .body-selection .background-selection .color_box, main .container .left-container .fo-selection .background-selection .color_box, main .container .left-container .fo-selection .footer-selection .color_box {
+  margin: 2%;
+  margin-top: 5%;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+main .container .left-container .body-selection .background-selection button, main .container .left-container .fo-selection .background-selection button, main .container .left-container .fo-selection .footer-selection button {
+  width: 9rem;
+  height: 3rem;
+  text-align: center;
+}
+main .container .left-container .body-selection .background-selection .margin-top, main .container .left-container .fo-selection .background-selection .margin-top, main .container .left-container .fo-selection .footer-selection .margin-top {
+  margin-top: 4%;
+}
+main .container .blue_font {
+  color: blue;
+  font-size: 1.5rem;
+}
+main .container .right-container {
+  width: 80%;
+  margin: 1rem;
+  background-color: whitesmoke;
+  flex-direction: column;
+}
+main .container .right-container .right-top-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+main .container .right-container .right-top-container .preview_submit_cancel_btn {
+  display: flex;
+  justify-content: end;
+}
+main .container .right-container .right-top-container .preview_submit_cancel_btn button {
+  padding: 1rem;
+  color: white;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0.7rem;
+}
+main .container .right-container .right-top-container .header_logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+main .container .right-container .right-top-container .header_logo .right-top-logo {
+  width: 27%;
+  height: 20vh;
+  border: 0.1px solid black;
+  border-style: dashed;
+  display: flex;
+  align-items: center;
+}
+main .container .right-container .right-main-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  height: 100%;
+}
+main .container .right-container .right-main-container .right-main {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+}
+main .container .right-container .right-main-container .right-main .right-body-img {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .container .right-container .right-main-container .right-main .right-body-img #banner_img {
+  max-width: 100%;
+  min-height: 100%;
+}
+main .container .right-container .right-main-container .right-main .right-footer {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: space-around;
+}
+main .container .right-container .right-main-container .right-main .right-footer .footer-components {
+  width: 40%;
+  border: 0.1px solid black;
+  border-style: dashed;
+  height: 5rem;
+}
+main .container .right-container .right-element-box {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+main .container .right-container .right-element-box .form-elements {
+  height: 90%;
+}
+main .container .right-container .right-element-box #register {
+  padding: 1rem;
+  width: 80%;
+  margin: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: orange;
+  color: white;
+}
+
+.text_box {
+  height: 10%;
+  margin: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.btn {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.grey {
+  background-color: darkgray;
+  color: white;
+}
+
+.blue {
+  background-color: rgb(81, 125, 255);
+  color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-solid {
+  background-color: transparent;
+}
+
+.input_values {
+  width: 100%;
+}
+
+.edit_form_elements .edit_popup {
+  border-radius: 4px;
+  top: 0;
+  width: 35%;
+  background-color: white;
+  position: absolute;
+  z-index: 3;
+  margin-top: 10%;
+  margin-left: 35%;
+  display: none;
+  border: 2px solid black;
+}
+.edit_form_elements .edit_popup .popup_h1 {
+  background-color: rgb(71, 135, 231);
+  height: 60px;
+}
+.edit_form_elements .edit_popup .p_popup {
+  background-color: white;
+  color: black;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+.edit_form_elements .edit_popup .input_popup {
+  background-color: white;
+  color: black;
+  width: 90%;
+  height: 30px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 3%;
+  border-radius: 5px;
+  border-color: grey;
+}
+.edit_form_elements .edit_popup .Checkbox {
+  display: flex;
+}
+.edit_form_elements .edit_popup .btn_popup_s, .edit_form_elements .edit_popup .btn_popup_c {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(71, 135, 231);
+  border: 0;
+  border-radius: 3px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 60%;
+  cursor: pointer;
+}
+.edit_form_elements .edit_popup .btn_popup_c {
+  background-color: grey;
+  width: 60px;
+  margin-left: 0%;
+}
+.edit_form_elements .edit_form_content {
+  margin: 5px;
+  padding: 5px;
+  height: 18%;
+  font-size: 1rem;
+}
+.edit_form_elements .edit_form_content p {
+  width: 551px;
+  height: 2rem;
+}
+.edit_form_elements .edit_form_content input {
+  width: 33rem;
+  height: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+.edit_form_elements .edit_form_content #edit_chk_box {
+  margin: 1rem;
+  font-size: 1.5rem;
+  width: 40%;
+  position: relative;
+  right: 76px;
+}
+
+.fa-regular, .far {
+  font-weight: 500;
+  position: relative;
+  top: 33px;
+  left: 77px;
+  font-size: 21px;
+}
+
+.fa-solid {
+  font-weight: 500;
+  position: relative;
+  top: 33px;
+  left: 77px;
+  font-size: 21px;
+}
+
+#pop_up_select {
+  width: 98%;
+  height: 2rem;
+  border-radius: 10px;
+}
+
+#pop_up_check {
+  margin: 1rem;
+}
+
+.check_close_btn {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  position: relative;
+  left: 88px;
+  margin: 1rem;
+}
+
+.fa-xmark {
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+.pen {
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+#edit_element {
+  margin: 0.5rem;
+}/*# sourceMappingURL=style.css.map */

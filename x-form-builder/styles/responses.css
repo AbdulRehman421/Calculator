@@ -1,0 +1,33 @@
+table{border: 1px solid black;
+        
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+th{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+tr{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+td{
+    font-size: 1.5rem;        
+}
+footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+button{
+
+    margin: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border:none;
+    background-color: rgb(255, 248, 47);
+    color: black;
+}
