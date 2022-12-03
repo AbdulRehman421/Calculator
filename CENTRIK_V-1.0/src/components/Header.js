@@ -11,7 +11,7 @@ const Header = () => {
         <header className=" flex justify-between py-4 px-4 sticky  top-0 bg-gray-900 text-white z-10 border-b-2 border-white">
             <div className=" hover:text-orange-500">
                 <span
-                    className=" ml-10 cursor-pointer text-xl"
+                    className="cursor-pointer text-xl"
                     onClick={() => navigate(-1)}
                 >
                     {" "}

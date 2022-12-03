@@ -10,16 +10,16 @@ const Rows = (props) => {
     let answer = getByCategory(ProductItems, props.category);
     return (
         <>
-            <h1 className=" m-5 text-2xl"> {props.category.toUpperCase()}</h1>
+            <h1 className=" m-5 text-xl md:text-2xl"> {props.category.toUpperCase()}</h1>
 
             <div className=" flex overflow-x-auto">
                 {answer.map((product) => (
                     <Link
                         to={`/items/${product.id}`}
-                        className=" w-1/4 p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out text-black"
+                        className=" p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out text-black"
                         key={product.id}
                     >
-                        <div className="flex-col  ">
+                        <div className="flex-col w-56 md:w-full ">
                             <div>
                                 {" "}
                                 <img

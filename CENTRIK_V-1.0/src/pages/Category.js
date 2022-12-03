@@ -13,14 +13,14 @@ const Category = () => {
     window.scroll(0, 0);
 
     return (
-        <section className=" flex max-h-screen overflow-y-auto">
+        <section className=" flex flex-col max-h-screen overflow-y-auto md:flex-row">
             <Filter className=" fixed top-0"></Filter>
             <div className="flex">
                 <div className=" flex flex-wrap justify-evenly text-center text-black border-t-2 border-white">
                     {productCategory.map((product) => (
                         <Link
                             to={`/items/${product.id}`}
-                            className=" w-1/4 p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out"
+                            className=" mt-20 p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out"
                             key={product.id}
                         >
                             <div className="flex-col">

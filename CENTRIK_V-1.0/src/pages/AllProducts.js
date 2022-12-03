@@ -5,7 +5,7 @@ import Filter from "../components/Filter";
 const AllProducts = () => {
     return (
         <div className=" static">
-            <div className=" flex">
+            <div className=" flex flex-col md:flex-row">
                 <Filter></Filter>
                 <Card />
             </div>

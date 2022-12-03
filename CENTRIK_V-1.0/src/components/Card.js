@@ -68,7 +68,7 @@ const Card = () => {
                 {filterProduct.map((product) => (
                     <Link
                         to={`/items/${product.id}`}
-                        className=" w-1/4 p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out"
+                        className=" p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out"
                         key={product.id}
                     >
                         <div className="flex-col  ">

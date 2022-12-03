@@ -40,7 +40,7 @@ const Filter = () => {
                                     </button>
                                 </Link>
                             </span>
-                            <div className=" w-1/3 mx-5 flex mt-3">
+                            <div className=" mx-5 flex mt-3">
                                 <div>
                                     <h2 className=" mx-5 text-xl font-medium mb-3"> Brands</h2>
 

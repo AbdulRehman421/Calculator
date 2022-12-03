@@ -74,7 +74,7 @@ const Cart = () => {
                     key={item.id}
                 >
                     {" "}
-                    <div className="flex w-1/2 justify-between mx-auto p-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded mb-0 mt-5 text-black h-32 pb-5 ">
+                    <div className="flex  justify-between mx-auto p-4  bg-gradient-to-br from-gray-300 to bg-gray-200 rounded mb-0 mt-5 text-black h-32 pb-5 md:w-1/2 ">
                         <div>
                             <img
                                 src={item.url}
@@ -82,15 +82,13 @@ const Cart = () => {
                                 className=" w-24 h-24 rounded border-2 border-black"
                             />
                         </div>
-                        <div className="flex justify-around">
-                            <h2 className="m-10">{item.name}</h2>
+                        <div className=" m-auto">
+                            <h2 className="">{item.name}</h2>
                         </div>
-                        <div>
-                            <h2 className="m-10">{item.discountedPrice}</h2>
+                        <div className=" m-auto">
+                            <h2 className="">{item.discountedPrice}</h2>
                         </div>
-                        <div>
-                            <h2 className="m-10"> {item.count}</h2>
-                        </div>
+
                     </div>
                 </Link>
             ))}

@@ -11,14 +11,14 @@ const Brands = () => {
     const productCategory = getBrand(ProductItems, params.brand);
     window.scroll(0, 0);
     return (
-        <section className=" flex overflow-y-auto min-h-screen">
+        <section className=" flex flex-col overflow-y-auto min-h-screen md:flex-row">
             <Filter className=" fixed top-0"></Filter>
 
             <div className=" flex flex-wrap justify-evenly text-center text-black border-t-2 border-white w-full ">
                 {productCategory.map((product) => (
                     <Link
                         to={`/items/${product.id}`}
-                        className=" wt-1/3 mt-20 p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out max-h-80"
+                        className=" mt-20 p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out max-h-80"
                         key={product.id}
                     >
                         <div className="flex-col max-h-min">
