@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Hero = () => {
     return (
-        <div className=" flex items-center w-full justify-evenly mt-12 pb-12 sm:text-sm  flex-col-reverse ">
+        <div className=" flex items-center w-full justify-evenly mt-12 pb-12 sm:text-sm  flex-col-reverse">
             <div className=" w-full text-center sm:text-center">
                 <div className="sm:text-sm  sm:ml-0 sm:mt-7 sm:text-lg"> <Link to="/allProducts">
                     <button className=" p-1 bg-white rounded text-black mt-8">

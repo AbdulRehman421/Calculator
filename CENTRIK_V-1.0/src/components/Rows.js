@@ -29,6 +29,10 @@ const Rows = (props) => {
                                 />
                             </div>
                             <h2 className=" p-2"> {product.title}</h2>
+                            <div className="flex justify-between my-5">
+                                <h3 className="text-sm text-green-400 font-bold">{product.discountPercentage} % Off</h3>
+                                <h3 className=" text-sm text-yellow-700">{product.rating} &#9733;</h3>
+                            </div>
                             <div className=" flex justify-between m-5">
                                 <h2>
                                     {" "}

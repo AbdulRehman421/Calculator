@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #111827;
+}
+html input {
+  border-radius: 0.5rem;
+  text-align: center;
+}
+html .header .url_openPdf .url i {
+  font-size: 10rem;
+}
+html .container {
+  display: flex;
+  color: rgb(0, 0, 0);
+}
+html .container .inputs {
+  width: 85%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #85dad1;
+}
+html .container .petitioner {
+  width: 20%;
+}
+html .container .pdfViewer {
+  width: 60%;
+}
+html .container .respondent {
+  text-align: center;
+  width: 20%;
+}
+html .container .respondent .decision {
+  font-size: 14px;
+}
+html .container .respondent .decision input {
+  margin: 5px;
+}
+html .container .respondent .comment_submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html .container .respondent .comment_submit input {
+  padding: 1rem;
+  width: 70%;
+  margin: 1rem;
+  background-color: #85dad1;
+}
+html .container .respondent .comment_submit button {
+  padding: 0.5rem 0;
+  margin: 1rem;
+  width: 25%;
+  background-color: #85dad1;
+  border-radius: 0.5rem;
+}
+html .container label {
+  color: white;
+}
+html .container .nameDrop {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+html .container .nameDrop i {
+  rotate: -180deg;
+  margin-right: 1rem;
+}/*# sourceMappingURL=style.css.map */

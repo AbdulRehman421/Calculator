@@ -29,7 +29,7 @@ const Cart = () => {
         <div className=" bg-gray-900 border-t-2 border-white h-auto min-h-screen">
             {showCart ? (
                 <div className="flex justify-evenly py-5 sticky top-16 bg-gray-900">
-                    <div className=" fixed bottom-2 right-10">
+                    <div className=" fixed bottom-2 md:right-10">
                         <h2 className=" pt-2 text-base text-green-400">
                             Savings : <span className=" text-2xl">{savings}</span>
                         </h2>

@@ -21,31 +21,33 @@ const SingleProduct = () => {
     return (
         <div>
             {singleItem.map((item) => (
-                <div key={item.id} className="flex min-h-screen">
-                    <div className=" w-40 m-5">
-                        <img src={item.thumbnail} alt={item.title} className="my-3" />
+                <div key={item.id} className="flex flex-col w-full min-h-screen md:flex-row">
+                    <div className=" md:w-40 m-5 flex md:flex-col">
+                        <div className=" w-full">
+                            <img src={item.thumbnail} alt={item.title} className="my-3" />
+                        </div>
+
                         {item.images.map((img) => (
-                            <div>
+                            <div className="m-2">
                                 <img src={img} alt={item.title} className="my-3" key={random} />
                             </div>
                         ))}
                     </div>
-                    <div className=" m-5 w-1/2">
+                    <div className=" m-5  md:w-1/2">
                         <img
                             src={item.thumbnail}
                             alt={item.title}
                             className="rounded-2xl"
                         />
                     </div>
-                    <div className="px-10 m-10 w-1/3">
+                    <div className="px-4 m-4 md:px-10 md:m-10 md:md:w-1/3 text-center">
                         <div className="flex justify-between my-5">
-                            <h3 className="text-xl ">{item.discountPercentage} % Off</h3>
-                            <h3>{item.rating} &#9733;</h3>
+                            <h3 className="text-sm text-green-400 font-bold">{item.discountPercentage} % Off</h3>
+                            <h3 className=" text-sm text-yellow-300">{item.rating} &#9733;</h3>
                         </div>
-                        <h2 className=" text-3xl">{item.title}</h2>
-                        <p className="my-10">{item.description}</p>
+                        <h2 className=" text-xl font-medium md:text-3xl">{item.title}</h2>
 
-                        <div className="flex justify-between">
+                        <div className="flex justify-between my-10">
                             <div>
                                 <h3 className="text-2xl ">
                                     Rs.
@@ -94,6 +96,11 @@ const SingleProduct = () => {
                                 Add to cart
                             </button>
                         </div>
+
+                        <p className="my-10">{item.description}</p>
+                        <p className=" px-10">COD Available</p>
+
+
                     </div>
                 </div>
             ))}

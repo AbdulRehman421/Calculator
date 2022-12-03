@@ -68,7 +68,7 @@ const Card = () => {
                 {filterProduct.map((product) => (
                     <Link
                         to={`/items/${product.id}`}
-                        className=" p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out"
+                        className=" p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out md:w-1/4"
                         key={product.id}
                     >
                         <div className="flex-col  ">
@@ -81,6 +81,10 @@ const Card = () => {
                                 />
                             </div>
                             <h2 className=" p-2"> {product.title}</h2>
+                            <div className="flex justify-between my-5">
+                                <h3 className="text-sm text-green-400 font-bold">{product.discountPercentage} % Off</h3>
+                                <h3 className=" text-sm text-yellow-700">{product.rating} &#9733;</h3>
+                            </div>
                             <div className=" flex justify-between m-5">
                                 <h2>
                                     {" "}
@@ -104,6 +108,7 @@ const Card = () => {
                                     <i className="fa-solid fa-bag-shopping m-2"></i>
                                 </button>
                             </div>
+
                         </div>
                     </Link>
                 ))}

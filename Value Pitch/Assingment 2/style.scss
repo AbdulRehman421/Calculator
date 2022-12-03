@@ -1,0 +1,83 @@
+$secondryColor: #85dad1;
+$primaryColor: #111827;
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    background-color: $primaryColor;
+    input {
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+
+    .header {
+        .url_openPdf {
+            // display: flex;
+            .url {
+                i {
+                    font-size: 10rem;
+                }
+            }
+        }
+    }
+    .container {
+        display: flex;
+        color: rgb(0, 0, 0);
+
+        .inputs {
+            width: 85%;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            background-color: $secondryColor;
+        }
+        .petitioner {
+            width: 20%;
+        }
+        .pdfViewer {
+            width: 60%;
+        }
+        .respondent {
+            text-align: center;
+            width: 20%;
+
+            .decision {
+                font-size: 14px;
+                input {
+                    margin: 5px;
+                }
+            }
+            .comment_submit {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input {
+                    padding: 1rem;
+                    width: 70%;
+                    margin: 1rem;
+                    background-color: $secondryColor;
+                }
+                button {
+                    padding: 0.5rem 0;
+                    margin: 1rem;
+                    width: 25%;
+                    background-color: $secondryColor;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+        label {
+            color: white;
+        }
+        .nameDrop {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            i {
+                rotate: (-180deg);
+                margin-right: 1rem;
+            }
+        }
+    }
+}

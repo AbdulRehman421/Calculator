@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header class=' mb-10 text-white'>
+        <nav class=' flex justify-between'>
+            <div class="logo_ham p-5">
+                Logo
+                <i class="fa-solid fa-bars p-5"></i>
+            </div>
+
+            <div class=' p-5'>
+                <i class="fa-solid fa-user p-5"></i>
+
+                <span class=' p-5'>
+                    Universal Tagging Sample
+                </span>
+
+                <span class=' my-7 '>
+                    <i class="fa-solid fa-power-off"></i>
+                </span>
+
+            </div>
+        </nav>
+
+        <div class="url_openPdf flex justify-between">
+            <div class='url ml-5'> Universal tagging / order copy entry / Qc screen / <i
+                    class="fa-solid fa-toggle-on m-1 mt-2 " id="darkOn"></i><i class="fa-solid fa-toggle-off m-1 mt-2"
+                    id="darkOff"></i>dark
+                mode/ </div>
+
+            <span>
+                <span class="mr-10">
+                    P1: Mahesh Pal
+                </span>
+                <span class="mr-10">
+                    R1 : State of hp
+                </span>
+                <span class="pdfbtn mr-10 p-3 border-white bg-white text-black rounded">
+
+                    <a href="">Enlarge PDF</a>
+                </span>
+
+            </span>
+    </header>
+
+    <div class="container text-black">
+
+        <div class="petitioner">
+            <div class="nameDrop">
+                <h5>Petitioner</h5> <span> <i class="fa-solid fa-plus"></i><i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <form action="submit">
+                <input type="text" placeholder="Name" class="inputs" id="input1">
+                <input type="text" placeholder="Father/Husband Name" class="inputs">
+                <input type="text" placeholder="Address" class="inputs">
+                <input type="text" placeholder="Age/year" class="inputs">
+            </form>
+            <div class="showData"></div>
+        </div>
+        <div class="pdfViewer">
+            <iframe src="assets/DUMMY DOCUMENT.pdf" width="100%" height="550px">
+            </iframe>
+        </div>
+        <div class="respondent">
+            <div class="nameDrop">
+                <h5>Respondent</h5> <span><i class="fa-solid fa-plus"></i> <i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <form action="submit">
+                <input type="text" placeholder="Name" class="inputs">
+                <input type="text" placeholder="Father/Husband Name" class="inputs">
+                <input type="text" placeholder="Address" class="inputs">
+                <input type="text" placeholder="Age/year" class="inputs">
+                <div class="decision">
+
+                    <label> Decision </label> :<input type="radio" name="decision" value="Valid"> <label>
+                        Valid
+                    </label>
+                    <input type="radio" name="decision" value="hold">
+                    <label>
+                        Hold
+
+                    </label>
+                    <input type="radio" name="decision" value="junk">
+                    <label>
+                        Junk
+                    </label>
+
+                </div>
+                <div class="comment_submit">
+                    <input type="text" class="comment" placeholder="Comments">
+                    <button id="saveData" class="saveData">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>
