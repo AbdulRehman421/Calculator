@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
     return (
-        <footer class="bg-gray-900 h-screen flex justify-center items-center">
+        <footer class="bg-gray-100 h-screen flex justify-center items-center">
             <div class="container mx-auto px-6 pt-10 pb-6">
                 <div class="flex flex-wrap">
                     <div class="w-full md:w-1/4 text-center md:text-left">
@@ -11,7 +11,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     FAQ
                                 </a>
@@ -19,7 +19,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     Help
                                 </a>
@@ -27,7 +27,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     Support
                                 </a>
@@ -40,7 +40,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     Terms
                                 </a>
@@ -48,7 +48,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     Privacy
                                 </a>
@@ -61,7 +61,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     Facebook
                                 </a>
@@ -69,7 +69,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     Linkedin
                                 </a>
@@ -77,7 +77,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     Twitter
                                 </a>
@@ -90,7 +90,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     Official Blog
                                 </a>
@@ -98,7 +98,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     About Us
                                 </a>
@@ -106,7 +106,7 @@ const Contact = () => {
                             <li class="mt-2">
                                 <a
                                     href="#"
-                                    class="hover:underline text-gray-600 hover:text-orange-500"
+                                    class="hover:underline text-gray-900 hover:text-blue-500 "
                                 >
                                     Contact
                                 </a>

@@ -25,27 +25,21 @@ const Cart = () => {
         showCart = true;
     }
     window.scrollTo(0, 0);
+
     return (
-        <div className=" bg-gray-900 border-t-2 border-white h-auto min-h-screen">
+        <div className=" bg-gray-100 border-t-2 border-white h-auto min-h-screen">
             {showCart ? (
-                <div className="flex justify-evenly py-5 sticky top-16 bg-gray-900">
-                    <div className=" fixed bottom-2 md:right-10">
-                        <h2 className=" pt-2 text-base text-green-400">
-                            Savings : <span className=" text-2xl">{savings}</span>
-                        </h2>
-                        <h2 className=" pt-2 text-base text-red-400">
-                            Before Discount : <span className=" text-xl">{prevTotal}</span>
-                        </h2>
-                    </div>
-                    <div>
+                <div className="flex justify-between py-5 sticky top-16 bg-white border-b-2 border-black">
+
+                    <div className="px-5">
                         <h2 className=" pt-2 text-lg">
-                            Total : <span>{newTotal}</span>
+                            Total :   <span className=" font-bold">${newTotal}</span>
                         </h2>
                     </div>
-                    <div>
+                    <div className="px-5">
                         <Link to="/placed">
                             <button
-                                className=" bg-slate-50 p-2 rounded text-black"
+                                className=" bg-blue-500 p-2 rounded text-white hover:bg-white border-2 border-blue-500 hover:text-blue-500"
                                 onClick={() => HandleBuy()}
                             >
                                 {" "}
@@ -53,13 +47,23 @@ const Cart = () => {
                             </button>
                         </Link>
                     </div>
+                    <div className="flex justify-around fixed bottom-0 md:bottom-2 bg-white px-5 text-center  rounded-xl w-full md:w-auto md:right-10 md:flex-col">
+                        <h2 className=" pt-2 md:text-base text-green-400">
+                            Savings : <span className=" md:text-2xl">{savings}</span>
+                        </h2>
+                        <h2 className=" pt-2 md:text-base text-red-400">
+                            Before Discount : <span className=" md:text-xl">{prevTotal}</span>
+                        </h2>
+                    </div>
                 </div>
+
+
             ) : (
                 <div className=" h-screen flex justify-center items-center">
                     <div>
                         <h1>CART IS EMPTY :( </h1>
                         <Link to="/allProducts">
-                            <button className=" p-2 bg-white rounded text-black mt-5">
+                            <button className=" p-2 text-white bg-blue-500 rounded-lg hover:bg-white border-2 border-blue-500 hover:text-blue-500 mt-5">
                                 Lets Save More...
                             </button>
                         </Link>
@@ -74,20 +78,22 @@ const Cart = () => {
                     key={item.id}
                 >
                     {" "}
-                    <div className="flex  justify-between mx-auto p-4  bg-gradient-to-br from-gray-300 to bg-gray-200 rounded mb-0 mt-5 text-black h-32 pb-5 md:w-1/2 ">
+                    <div className="flex  justify-between mx-auto p-4 bg-white shadow-xl rounded-xl last:mb-5 mt-5 text-black h-32 pb-5 my-5 mb-10 md:w-1/2 ">
                         <div>
                             <img
                                 src={item.url}
                                 alt={item.name}
-                                className=" w-24 h-24 rounded border-2 border-black"
+                                className=" w-24 h-24 rounded"
                             />
                         </div>
                         <div className=" m-auto">
                             <h2 className="">{item.name}</h2>
                         </div>
-                        <div className=" m-auto">
-                            <h2 className="">{item.discountedPrice}</h2>
+                        <div className=" m-auto text-right">
+                            <h2 className=" font-bold">$
+                                {item.discountedPrice}</h2>
                         </div>
+                        {/* <div ><i class="fa-solid fa-trash"></i></div> */}
 
                     </div>
                 </Link>

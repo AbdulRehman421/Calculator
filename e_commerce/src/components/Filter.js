@@ -25,7 +25,7 @@ const Filter = () => {
             {
                 <div className="border-t-2 border-white">
                     {showfilter ? (
-                        <div className="filter flex-col border-3 border-white bg-slate-50 text-black ">
+                        <div className="filter flex-col border-3 border-white bg-white text-black ">
                             <span
                                 span
                                 className=" float-right p-5 text-2xl"
@@ -35,7 +35,7 @@ const Filter = () => {
                             </span>
                             <span className=" mx-24 my-5">
                                 <Link to="/allProducts">
-                                    <button className="p-2 bg-gray-900 rounded text-white ml-4 m-5 px-10 h-10">
+                                    <button className="p-2 bg-blue-500 rounded text-white ml-4 m-5 px-10 h-10">
                                         Reset
                                     </button>
                                 </Link>
@@ -70,7 +70,7 @@ const Filter = () => {
                         </div>
                     ) : (
                         <div className=" m-5 fixed top-16 text-3xl" onClick={HandleFilter}>
-                            <i className="fa-solid fa-filter"></i>
+                            <i className="fa-solid fa-filter text-blue-500"></i>
                         </div>
                     )}
                 </div>

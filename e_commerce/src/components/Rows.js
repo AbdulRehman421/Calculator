@@ -7,41 +7,39 @@ const Rows = (props) => {
     const { ProductItems } = useContext(ProductContext);
     const { getByCategory } = useContext(ProductContext);
     const { addToCart } = useContext(CartContext);
-    let answer = getByCategory(ProductItems, props.category);
+    let filteredCategories = getByCategory(ProductItems, props.category);
     return (
-        <>
-            <h1 className=" m-5 text-xl md:text-2xl"> {props.category.toUpperCase()}</h1>
+        <div >
+            <h1 className=" m-5 text-xl md:text-2xl text-black "> {props.category.toUpperCase()}</h1>
 
-            <div className=" flex overflow-x-auto">
-                {answer.map((product) => (
+            <div className=" flex overflow-x-auto ">
+                {filteredCategories.map((product) => (
                     <Link
                         to={`/items/${product.id}`}
-                        className=" p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out text-black"
+                        className=" p-5  drop-shadow-xl m-5  bg-white rounded-lg hover:scale-105 ease-in-out text-black "
                         key={product.id}
                     >
-                        <div className="flex-col w-56 md:w-full ">
+                        <div className="flex-col w-56 ">
                             <div>
                                 {" "}
                                 <img
                                     src={product.thumbnail}
                                     alt=""
-                                    className=" m-auto  h-48 w-40 rounded border-2 border-black"
+                                    className=" m-auto h-48 w-56 rounded"
                                 />
                             </div>
                             <h2 className=" p-2"> {product.title}</h2>
-                            <div className="flex justify-between my-5">
-                                <h3 className="text-sm text-green-400 font-bold">{product.discountPercentage} % Off</h3>
-                                <h3 className=" text-sm text-yellow-700">{product.rating} &#9733;</h3>
-                            </div>
+                            <div className="flex justify-between m-5">
+                                <h3 className="text-sm text-green-500 font-bold">{product.discountPercentage} % Off</h3>
+                                <h3><span className=" text-sm text-yellow-400"><i class="fa-solid fa-star"></i></span><span className=" text-sm ml-1" >{product.rating}</span></h3>                            </div>
                             <div className=" flex justify-between m-5">
-                                <h2>
-                                    {" "}
+                                <h2 className=" font-bold">$
                                     {(
                                         product.price -
                                         (product.discountPercentage * product.price) / 100
                                     ).toFixed(2)}
                                 </h2>
-                                <button
+                                <button className=" text-blue-500 text-2xl ml-4  drop-shadow-xl"
                                     onClick={(e) =>
                                         addToCart(
                                             product.id,
@@ -53,14 +51,15 @@ const Rows = (props) => {
                                     }
                                 >
                                     {" "}
-                                    <i className="fa-solid fa-bag-shopping m-2"></i>
+                                    <i className="fa-solid fa-bag-shopping"></i>
                                 </button>
+
                             </div>
                         </div>
                     </Link>
                 ))}
             </div>
-        </>
+        </div>
     );
 };
 

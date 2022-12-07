@@ -18,7 +18,7 @@ function App() {
   return (
     <ProductProvider>
       <CartProvider>
-        <div className="App  bg-gray-900 text-white ">
+        <div className="App  bg-gray-100  ">
           <BrowserRouter>
             <Header />
             <Routes>

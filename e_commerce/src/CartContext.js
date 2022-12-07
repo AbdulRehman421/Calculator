@@ -9,7 +9,7 @@ export function CartProvider({ children }) {
         let discountedPrice = (price - (discount * price) / 100).toFixed(2);
         let Items = {
             all: {
-                
+
             }
 
 

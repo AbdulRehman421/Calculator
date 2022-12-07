@@ -39,10 +39,10 @@ const Card = () => {
 
     return (
         <div className=" flex flex-col">
-            <div className=" my-5 w-full  ">
+            <div className=" py-5 w-full  bg-white">
                 <form action="#" className=" flex justify-end">
                     <select
-                        className="mx-5 w-40 p-2 bg-slate-50 text-black border-0 rounded"
+                        className="mx-5 w-40 p-2 bg-slate-50 text-black border-2 border-black rounded"
                         name="sort"
                         id="sort"
                         onChange={(e) => {
@@ -64,36 +64,36 @@ const Card = () => {
                 </form>
             </div>
 
-            <div className=" flex flex-wrap justify-evenly text-center text-black border-t-2 border-white">
+            <div className=" flex flex-wrap justify-evenly text-center text-black border-t-2 border-black">
                 {filterProduct.map((product) => (
                     <Link
                         to={`/items/${product.id}`}
-                        className=" p-5  m-5 bg-gradient-to-br from-gray-300 to bg-gray-200 rounded hover:scale-105 ease-in-out md:w-1/4"
+                        className=" p-5  m-5 rounded-lg bg-white  hover:scale-105 ease-in-out md:w-1/4  drop-shadow-2xl"
                         key={product.id}
                     >
-                        <div className="flex-col  ">
+                        <div className="flex-col ">
                             <div>
                                 {" "}
                                 <img
                                     src={product.thumbnail}
                                     alt=""
-                                    className=" m-auto  h-48 w-40 rounded border-2 border-black"
+                                    className=" m-auto h-48 w-56 rounded"
                                 />
                             </div>
                             <h2 className=" p-2"> {product.title}</h2>
-                            <div className="flex justify-between my-5">
-                                <h3 className="text-sm text-green-400 font-bold">{product.discountPercentage} % Off</h3>
-                                <h3 className=" text-sm text-yellow-700">{product.rating} &#9733;</h3>
+                            <div className="flex justify-between m-5">
+                                <h3 className="text-sm text-green-500 font-bold">{product.discountPercentage} % Off</h3>
+                                <h3><span className=" text-sm text-yellow-400"><i class="fa-solid fa-star"></i></span><span className=" text-sm ml-1" >{product.rating}</span></h3>
                             </div>
-                            <div className=" flex justify-between m-5">
-                                <h2>
+                            <div className=" flex justify-between items-center m-5">
+                                <h2 className=" font-bold">$
                                     {" "}
                                     {(
                                         product.price -
                                         (product.discountPercentage * product.price) / 100
                                     ).toFixed(2)}
                                 </h2>
-                                <button
+                                <button className=" text-blue-500 text-2xl ml-4  drop-shadow-xl"
                                     onClick={(e) =>
                                         addToCart(
                                             product.id,
@@ -105,7 +105,7 @@ const Card = () => {
                                     }
                                 >
                                     {" "}
-                                    <i className="fa-solid fa-bag-shopping m-2"></i>
+                                    <i className="fa-solid fa-bag-shopping"></i>
                                 </button>
                             </div>
 
