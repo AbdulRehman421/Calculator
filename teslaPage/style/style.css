@@ -1,0 +1,352 @@
+@import url("http://fonts.cdnfonts.com/css/gotham");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Gotham", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  background-color: black;
+  position: relative;
+}
+.container header {
+  position: absolute;
+  margin-top: 1rem;
+  font-weight: 500;
+  width: 100%;
+}
+.container header nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  position: relative;
+}
+.container header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.container header nav li {
+  font-size: 14px;
+  cursor: pointer;
+}
+.container header nav .tesla_logo {
+  color: black;
+  cursor: pointer;
+  width: 20%;
+}
+.container header nav .tesla_logo svg {
+  width: 50%;
+}
+.container header nav .tesla_products_dashboard {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.container header nav .tesla_products_dashboard .tesla_models {
+  width: 70%;
+  margin-left: 5%;
+}
+.container header nav .tesla_products_dashboard .user_dashboard {
+  width: 20%;
+}
+.container header nav .hamberg, .container header nav .close_hamberg {
+  display: none;
+  position: absolute;
+  right: 5%;
+  right: 20%;
+  font-size: 2rem;
+  z-index: 5;
+}
+.container .banner {
+  background: url("../assests/hero@2.avif");
+  background-size: cover;
+  object-fit: cover;
+  text-align: center;
+}
+.container .banner .banner_text h1 {
+  color: #5c5e62;
+  font-size: 50px;
+  margin-top: 5px;
+  font-weight: 400;
+  padding-top: 5%;
+}
+.container .banner .banner_text p {
+  margin-top: 32%;
+  margin-left: 32%;
+  width: 380px;
+  color: white;
+}
+.container .banner .banner_text .tesla_specification {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .banner .banner_text .tesla_specification i {
+  font-size: 2rem;
+}
+.container .banner .banner_text .tesla_specification .specifications_collection {
+  display: flex;
+}
+.container .banner .banner_text .tesla_specification .specifications {
+  padding: 2rem;
+}
+.container .banner .banner_text .tesla_specification .specifications h4 {
+  margin-top: 0.5rem;
+}
+.container .banner .banner_text .tesla_specification .specifications span {
+  font-weight: 400;
+  font-size: 32px;
+}
+.container .banner .banner_text .tesla_specification .reserve {
+  border: 2px solid white;
+  width: 12rem;
+  padding: 0.7rem;
+  margin-left: 3rem;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.container .banner .banner_text .tesla_specification .reserve:hover {
+  background-color: white;
+  color: black;
+}
+.container .tesla_video_description {
+  z-index: 999;
+  padding-top: 5rem;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+.container .tesla_video_description .tesla_video {
+  position: absolute;
+  left: 20%;
+}
+.container .tesla_video_description .tesla_video video {
+  width: 80%;
+}
+.container .tesla_video_description .specifications {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+.container .tesla_video_description .specifications ul {
+  list-style: none;
+  margin-top: 25%;
+  width: 40%;
+}
+.container .tesla_video_description .specifications ul .specs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  font-weight: 100;
+}
+.container .tesla_video_description .performance_section {
+  position: relative;
+}
+.container .tesla_video_description .performance_section img {
+  max-width: 70%;
+  margin-left: 16%;
+}
+.container .tesla_video_description .performance_section .performance_content {
+  position: absolute;
+  background-color: black;
+  top: 80%;
+  left: 33%;
+}
+.container .tesla_video_description .performance_section .performance_content p {
+  width: 75%;
+  padding-top: 2rem;
+  letter-spacing: 1px;
+}
+.container .tesla_interior {
+  padding-top: 5rem;
+  background-color: black;
+}
+.container .tesla_interior img {
+  width: 60%;
+  margin-left: 25%;
+}
+.container .tesla_interior .interior_content {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 66%;
+  left: 33%;
+}
+.container .tesla_interior .interior_content p {
+  width: 50%;
+  padding-top: 2rem;
+  letter-spacing: 1px;
+}
+.container .glass_roof {
+  position: relative;
+  background-color: black;
+}
+.container .glass_roof img {
+  width: 100%;
+}
+.container .glass_roof .glass_roof_content {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 80%;
+  left: 33%;
+}
+.container .glass_roof .glass_roof_content p {
+  width: 50%;
+  padding-top: 2rem;
+  letter-spacing: 1px;
+}
+.container footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.container footer .line {
+  height: 5rem;
+  height: 5rem;
+  width: 2px;
+  margin-left: 50%;
+  background: red;
+}
+.container footer .button_collection {
+  padding: 3rem;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+}
+.container footer .button_collection .btn {
+  width: 10rem;
+  border-radius: 5px;
+  border: 2px solid white;
+  padding: 1rem;
+  margin: 2rem;
+}
+.container footer .button_collection .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+  .container header nav {
+    justify-content: left;
+  }
+  .container header nav .tesla_logo {
+    width: 40%;
+  }
+  .container header nav .tesla_products_dashboard {
+    align-items: end;
+    z-index: 2;
+    height: 100vh;
+    padding-top: 20%;
+    width: 70%;
+    flex-direction: column;
+    display: none;
+    justify-content: flex-start;
+    background-color: white;
+    color: black;
+  }
+  .container header nav .tesla_products_dashboard .tesla_models {
+    width: 100vw;
+    margin: 0;
+  }
+  .container header nav .tesla_products_dashboard .tesla_models ul {
+    flex-direction: column;
+  }
+  .container header nav .tesla_products_dashboard .tesla_models ul li {
+    padding: 1.5rem;
+  }
+  .container header nav .tesla_products_dashboard .user_dashboard {
+    width: 100vw;
+  }
+  .container header nav .tesla_products_dashboard .user_dashboard ul {
+    flex-direction: column;
+  }
+  .container header nav .tesla_products_dashboard .user_dashboard ul li {
+    padding: 1.5rem;
+  }
+  .container header nav .hamberg, .container header nav .close_hamberg {
+    display: block;
+    right: 4%;
+  }
+  .container header nav .close_hamberg {
+    display: none;
+    right: 4%;
+  }
+  .container .banner {
+    background-image: url("../assests/hero_responsive2.jpg");
+  }
+  .container .banner .banner_text {
+    min-height: 66vh;
+  }
+  .container .banner .banner_text h1 {
+    padding-top: 15%;
+  }
+  .container .banner .banner_text p {
+    position: absolute;
+    width: 42%;
+    top: 0rem;
+    color: black;
+    left: -3%;
+  }
+  .container .banner .banner_text .tesla_specification {
+    position: absolute;
+    flex-direction: column;
+    top: 15%;
+    left: 0%;
+    width: 100%;
+  }
+  .container .banner .banner_text .tesla_specification .specifications {
+    padding: 1rem;
+  }
+  .container .banner .banner_text .tesla_specification .specifications span {
+    font-size: 2rem;
+  }
+  .container .banner .banner_text .tesla_specification .reserve {
+    margin: 3rem;
+  }
+  .container .tesla_video_description .performance_section img {
+    max-width: 100%;
+    padding: 0rem;
+    margin-left: 0;
+    margin-bottom: 10rem;
+  }
+  .container .tesla_video_description .performance_section .performance_content {
+    top: 60%;
+    left: 26%;
+  }
+  .container .tesla_interior {
+    margin-bottom: 10rem;
+  }
+  .container .tesla_interior .interior_content {
+    top: 69%;
+    left: 28%;
+  }
+  .container .glass_roof {
+    margin-bottom: 5rem;
+  }
+  .container .glass_roof .glass_roof_content p {
+    width: 57%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="script/main.js" defer></script>
+  <script src="script/validation.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image_section">
+      <img src="assests/img1.png" alt="" class="landing_page_bg sliding_images">
+
+
+      <div class="moto_left" id="moto_heading">
+        <h1>
+          We Make healing Simple
+        </h1>
+      </div>
+      <div class="logo_left">
+        <img src="assests/Group 3061logo_white.png" alt="">
+
+
+      </div>
+      <div class="sliding_circles">
+        <div class="div_cirle circle1 " onclick="slide('btn1')"></div>
+        <div class="div_cirle circle2" onclick="slide('btn2')"></div>
+        <div class="div_cirle circle3" onclick="slide('btn3')"></div>
+        <div class="div_cirle circle4" onclick="slide('btn4')"></div>
+      </div>
+
+    </div>
+    <div class="signup_section">
+      <div class="logo_moto">
+        <div class="logo">
+          <img src="assests/logo.png" id="sing_up_logo">
+        </div>
+
+        <div class="moto">
+          <h2>BRAND<span id="trademark"><sup>TM</sup></h2></span>
+        </div>
+
+      </div>
+      <div class="signup_box">
+
+        <form class="sign_up_form" type="get">
+          <label for="name" class="labels_signups">Name</label>
+          <input class="input_boxes user_name" type="text" id="name">
+          <label for="email" class="labels_signups">Email</label>
+          <input class="input_boxes email_box" type="email" id="email" id="">
+          <label for="password" class="labels_signups">Password</label>
+          <input class="input_boxes password_box" type="password" id="password">
+          <a href="profile.html">
+            <button  class="button" onclick="checkSignUp()">Join HealCommunity</button></a>
+          <div class="check_box_tnc">
+            <input type="checkbox" id="checkbox" id="singup_tnc_chk">
+            <span class="terms_and_conditions">i have read and accepted the <a class="tnc_link">terms and
+                Conditions</a></span>
+
+
+
+          </div>
+          <div class="error"></div>
+          <div class="login_area">
+            <p class="p_login_area">already have an account</p>
+
+            <button class="login_btn button"><a href="login.html">Log in</a> </button>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+  <script src="script/validation.js"></script>
+</body>
+
+</html>

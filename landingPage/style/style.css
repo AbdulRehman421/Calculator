@@ -1,0 +1,494 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  padding: 1rem;
+  width: 90%;
+}
+
+body .profile_header nav {
+  display: flex;
+  justify-content: space-between;
+}
+body .profile_header nav .navbar_logo {
+  display: flex;
+  margin: 0.5rem;
+  width: 50%;
+}
+body .profile_header nav .navbar_logo h1 {
+  color: #515d82;
+}
+body .profile_header nav .navbar_logo h1 sup {
+  font-size: 0.8rem;
+}
+body .profile_header nav .navbar_logo .logo_left_profile {
+  margin-right: 0.5rem;
+}
+body .profile_header nav .profile_info {
+  margin: 0.5%;
+  display: flex;
+  position: relative;
+  gap: 0.5rem;
+}
+body .profile_header nav .profile_info img {
+  border-radius: 50%;
+}
+body .profile_header nav .profile_info .bell_icon {
+  position: absolute;
+  top: 1rem;
+  left: -1.5rem;
+}
+body .profile_header nav .profile_info .bell_icon .fa-bell {
+  color: #9a9ab0;
+}
+body .profile_header nav .profile_info .user_name_email .nav_user_name {
+  color: #11142d;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+}
+body .profile_header nav .profile_info .user_name_email .nav_user_email {
+  color: #9a9ab0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+}
+body main {
+  display: flex;
+}
+body main .aside_section {
+  width: 20%;
+  background: #515d82;
+  color: white;
+}
+body main .aside_section .aside_elements {
+  width: 70%;
+  border-radius: 0.5rem;
+  margin: 10%;
+  padding: 1rem;
+}
+body main .aside_section .aside_elements .aside_items {
+  margin-left: 0.5rem;
+}
+body main .aside_section .aside_elements:hover {
+  background: white;
+  color: #515d82;
+}
+body main .aside_section .logout_button {
+  width: 80%;
+  border-radius: 0.5rem;
+  margin: 10%;
+  padding: 1rem;
+  margin-top: 32rem;
+  background-color: #515d82;
+  color: white;
+  border: 1px solid #f7f7f7;
+  font-weight: 700;
+}
+body main .aside_section .fa-right-from-bracket {
+  margin: 0.5rem;
+}
+body main .profile_container {
+  width: 30%;
+}
+body main .profile_container .profile_edit_pic_password .view_pic {
+  width: 60%;
+  height: 14rem;
+  margin: 20%;
+  border-radius: 50%;
+  background-color: #515d82;
+}
+body main .profile_container .profile_edit_pic_password .profile_edit_buttons {
+  display: flex;
+  justify-content: space-around;
+}
+body main .profile_container .profile_edit_pic_password .profile_edit_buttons .profile_edit_button {
+  font-size: 1rem;
+  width: 40%;
+  padding: 1rem;
+  background: #d2deea;
+  border-radius: 6px;
+  color: #515d82;
+  border: none;
+}
+body main .profile_container .profile_edit_pic_password .profile_password {
+  margin: 10%;
+  margin-top: 20%;
+}
+body main .profile_container .profile_edit_pic_password .profile_password .password_heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  color: #515d82;
+  letter-spacing: 0.005em;
+  margin-bottom: 0.9rem;
+}
+body main .profile_container .profile_edit_pic_password .profile_password .reset_password_btn {
+  border-top: 1px solid #d2deea;
+}
+body main .profile_container .profile_edit_pic_password .profile_password .reset_password_btn .reset_description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+}
+body main .profile_container .profile_edit_pic_password .profile_password .reset_password_btn p:nth-child(1) {
+  margin-top: 1rem;
+}
+body main .profile_container .profile_edit_pic_password .profile_password .reset_password_btn .reset_button {
+  width: 100%;
+  background: #515d82;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 0.8rem;
+  color: #d2deea;
+}
+body main .profile_container .profile_edit_pic_password .div_save_changes {
+  display: flex;
+  gap: 1rem;
+  margin-left: 15%;
+  margin-top: 49%;
+}
+body main .profile_container .profile_edit_pic_password .div_save_changes button {
+  width: 40%;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border: 1px solid #515d82;
+  border-radius: 6px;
+}
+body main .profile_container .profile_edit_pic_password .div_save_changes .cancel_btn {
+  background: #f7f7f7;
+  color: #515d82;
+}
+body main .profile_container .profile_edit_pic_password .div_save_changes .save_btn {
+  background-color: #515d82;
+  color: #f7f7f7;
+}
+body main .edit_personal_info {
+  width: 50%;
+  background: #f7f7f7;
+}
+body main .edit_personal_info section h3 {
+  color: #515d82;
+  letter-spacing: 0.005em;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 10%;
+  margin-left: 8%;
+  margin-bottom: 0.9rem;
+  font-size: 1.5rem;
+}
+body main .edit_personal_info .labels_edit_personal_info {
+  color: #515d82;
+  display: block;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+body main .edit_personal_info .first_label {
+  margin-top: 5%;
+}
+body main .edit_personal_info .input_text {
+  margin: 0.5rem;
+  width: 88%;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+body main .edit_personal_info .personal_info {
+  margin-left: 8%;
+  border-top: 1px solid #bdbdbd;
+}
+body main .edit_personal_info h2 {
+  color: #515d82;
+  letter-spacing: 0.005em;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-bottom: 0.9rem;
+  font-size: 1.5rem;
+}
+body main .address_info {
+  margin-left: 8%;
+  border-top: 1px solid #bdbdbd;
+}
+body main .address_info .city_state {
+  display: flex;
+  gap: 1rem;
+}
+body main .address_info .city_state .city {
+  width: 45%;
+}
+body main .address_info .city_state .state {
+  width: 45%;
+}
+body main .address_info .zip_code_country {
+  display: flex;
+  gap: 1rem;
+}
+body main .address_info .zip_code_country .zip_code {
+  width: 45%;
+}
+body main .address_info .zip_code_country .country {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  body html {
+    font-size: 60%;
+  }
+  body main {
+    flex-wrap: wrap;
+  }
+  body main .aside_section {
+    width: 30%;
+  }
+  body main .aside_section .aside_elements {
+    width: 60%;
+  }
+  body main .profile_container {
+    width: 70%;
+  }
+  body main .profile_container .profile_edit_pic_password .div_save_changes {
+    margin-top: 15%;
+  }
+  body main .edit_personal_info {
+    width: 100%;
+  }
+}
+.remember_forget_pass {
+  display: flex;
+  justify-content: space-between;
+}
+.remember_forget_pass .remember_me {
+  color: #788292;
+}
+.remember_forget_pass a {
+  font-weight: 400;
+  color: #515d82;
+}
+
+button {
+  padding: 1rem;
+  width: 90%;
+}
+
+.container {
+  position: relative;
+}
+.container .signup_section .forget_password_disc p {
+  border-top: 1px solid #515d82;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+.container {
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: #f7f7f7;
+  width: 100%;
+}
+.container .image_section {
+  position: relative;
+  width: 100%;
+}
+.container .landing_page_bg {
+  width: 100%;
+}
+.container .moto_left {
+  position: absolute;
+  left: 55px;
+  top: 118px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 102px;
+  color: white;
+  width: 50%;
+}
+.container #moto_heading {
+  color: #d2deea;
+  display: block;
+}
+.container .logo_left {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+}
+.container .sliding_circles {
+  position: absolute;
+  display: flex;
+  padding: 5px 0rem;
+  margin: -8% 0% 0% 40%;
+}
+.container .sliding_circles .div_cirle {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  margin: 0.5rem;
+}
+.container .signup_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .signup_section .logo_moto {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.container .signup_section .logo_moto .moto #trademark {
+  font-size: 0.9rem;
+}
+.container .signup_section .signup_box {
+  width: 70%;
+}
+.container .signup_section .signup_box .error {
+  color: red;
+}
+.container .signup_section .signup_box .input_boxes {
+  padding: 0.5rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.5rem;
+  margin-top: 0.2rem;
+}
+.container .signup_section .signup_box .labels_signups {
+  display: block;
+  margin-top: 0.5rem;
+  color: #515d82;
+}
+.container .signup_section .signup_box .button {
+  display: block;
+  width: 100%;
+  background: #515d82;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  color: white;
+  margin-top: 2rem;
+}
+.container .signup_section .signup_box .check_box_tnc {
+  margin-top: 0.5rem;
+}
+.container .signup_section .signup_box .login_btn {
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 1.5px solid #515d82;
+  border-radius: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #515d82;
+}
+.container .signup_section .signup_box .terms_and_conditions {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #788292;
+}
+.container .signup_section .signup_box .terms_and_conditions .tnc_link {
+  font-weight: 600;
+  text-decoration: underline;
+  color: #515d82;
+}
+.container .signup_section .signup_box .login_area {
+  margin-top: 10%;
+}
+.container .signup_section .signup_box .login_area .p_login_area {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #788292;
+}
+.container .signup_section .signup_box a {
+  text-decoration: none;
+}
+.container .signup_section .signup_box h3 {
+  margin-top: 4rem;
+  color: #515d82;
+}
+.container .signup_section .signup_box .send_email {
+  border-top: 1px solid #D2DEEA;
+}
+.container .signup_section .signup_box .send_email p {
+  margin-top: 1rem;
+  color: #788292;
+}
+.container .signup_section .signup_box .send_email .transparent_btn {
+  background-color: transparent;
+  width: 100%;
+  display: block;
+  border-radius: 0.5rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 120%;
+}
+.container .signup_section .signup_box form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  .container .image_section .landing_page_bg {
+    min-height: 490px;
+  }
+  .container .image_section #moto_heading {
+    display: none;
+  }
+  .container .image_section .logo_left {
+    display: none;
+  }
+  .container .image_section .sliding_circles {
+    display: none;
+  }
+  .container .signup_section {
+    position: absolute;
+    top: 22%;
+    left: 30%;
+  }
+}
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 80%;
+  }
+  .container .left {
+    left: 0%;
+  }
+  .container .signup_section {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 80%;
+  }
+  .container .signup_section {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+  }
+  .container .signup_section .signup_box .input_boxes {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,298 @@
+@import "variables";
+
+body {
+    .profile_header {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            .navbar_logo {
+                display: flex;
+                margin: 0.5rem;
+                width: 50%;
+
+                h1 {
+                    color: $blue_color;
+
+                    sup {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .logo_left_profile {
+                    margin-right: 0.5rem;
+                }
+            }
+            .profile_info {
+                margin: 0.5%;
+                display: flex;
+                position: relative;
+                gap: 0.5rem;
+                img {
+                    border-radius: 50%;
+                }
+                .bell_icon {
+                    position: absolute;
+                    top: 1rem;
+                    left: -1.5rem;
+                    .fa-bell {
+                        color: #9a9ab0;
+                    }
+                }
+
+                .user_name_email {
+                    .nav_user_name {
+                        color: #11142d;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 120%;
+                    }
+
+                    .nav_user_email {
+                        color: #9a9ab0;
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 120%;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        display: flex;
+        .aside_section {
+            width: 20%;
+            background: $blue_color;
+            color: white;
+            .aside_elements {
+                width: 70%;
+                border-radius: 0.5rem;
+                margin: 10%;
+                padding: $padding_1rem;
+
+                .aside_items {
+                    margin-left: 0.5rem;
+                }
+            }
+            .aside_elements:hover {
+                background: white;
+                color: $blue_color;
+            }
+            .logout_button {
+                width: 80%;
+                border-radius: 0.5rem;
+                margin: 10%;
+                padding: $padding_1rem;
+                margin-top: 32rem;
+                background-color: $blue_color;
+                color: white;
+                border: $border_1px #f7f7f7;
+                font-weight: 700;
+            }
+            .fa-right-from-bracket {
+                margin: 0.5rem;
+            }
+        }
+        .profile_container {
+            width: 30%;
+          
+
+            .profile_edit_pic_password {
+                .view_pic {
+                    width: 60%;
+                    height: 14rem;
+                    margin: 20%;
+                    border-radius: 50%;
+                    background-color: $blue_color;
+                }
+
+                .profile_edit_buttons {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .profile_edit_button {
+                        font-size: 1rem;
+                        width: 40%;
+                        padding:  $padding_1rem;
+                        background: #d2deea;
+                        border-radius: 6px;
+                        color: $blue_color;
+                        border: none;
+                    }
+                }
+
+                .profile_password {
+                    margin: 10%;
+                    margin-top: 20%;
+                    .password_heading {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 800;
+                        // font-size: 18px;
+                        line-height: 120%;
+                        color: $blue_color;
+                        letter-spacing: 0.005em;
+                        margin-bottom: 0.9rem;
+                    }
+                    .reset_password_btn {
+                        border-top: $border_1px #d2deea;
+                        .reset_description {
+                            font-family: "Inter";
+                            font-style: normal;
+                            font-weight: 500;
+                        }
+                        p:nth-child(1) {
+                            margin-top: 1rem;
+                        }
+                        .reset_button {
+                            width: 100%;
+                            background: $blue_color;
+                            border-radius: 6px;
+                            padding:  $padding_1rem;
+                            margin-top: 0.8rem;
+                            color: #d2deea;
+                        }
+                    }
+                }
+                .div_save_changes {
+                    display: flex;
+                    gap: 1rem;
+                    margin-left: 15%;
+                    margin-top: 49%;
+
+                    button {
+                        width: 40%;
+                        justify-content: space-evenly;
+                        padding:  $padding_1rem;
+                        border: $border_1px $blue_color;
+                        border-radius: 6px;
+                    }
+                    .cancel_btn {
+                        background: #f7f7f7;
+                        color: $blue_color;
+                    }
+                    .save_btn {
+                        background-color: $blue_color;
+                        color: #f7f7f7;
+                    }
+                }
+            }
+        }
+
+        .edit_personal_info {
+            width: 50%;
+            background: #f7f7f7;
+            section {
+                h3 {
+                    color: $blue_color;
+                    letter-spacing: 0.005em;
+                    font-size: 1rem;
+                    font-weight: 900;
+                    margin-top: 10%;
+                    margin-left: 8%;
+                    margin-bottom: 0.9rem;
+
+                    font-size: 1.5rem;
+                }
+            }
+            .labels_edit_personal_info {
+                color: $blue_color;
+                display: block;
+                font-weight: 700;
+                margin-left: 0.5rem;
+            }
+            .first_label {
+                margin-top: 5%;
+            }
+            .input_text {
+                margin: 0.5rem;
+                width: 88%;
+                border: $border_1px #bdbdbd;
+                border-radius: 8px;
+                padding: $padding_1rem;
+            }
+            .personal_info {
+                margin-left: 8%;
+                border-top: $border_1px #bdbdbd;
+            }
+            h2 {
+                color: $blue_color;
+                letter-spacing: 0.005em;
+                font-size: 1rem;
+                font-weight: 900;
+                margin-top: 5%;
+                margin-left: 8%;
+                margin-bottom: 0.9rem;
+                font-size: 1.5rem;
+            }
+        }
+        .address_info {
+            margin-left: 8%;
+            border-top: $border_1px #bdbdbd;
+            .city_state {
+                display: flex;
+                gap: 1rem;
+                .city {
+                    width: 45%;
+                }
+                .state {
+                    width: 45%;
+                }
+            }
+            .zip_code_country {
+                display: flex;
+                gap: 1rem;
+
+                .zip_code {
+                    width: 45%;
+                }
+                .country {
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 768px) {
+    body{
+        html{
+            font-size: 60%;
+        }
+        main {flex-wrap: wrap;
+            
+           
+            // display: flex;
+            // flex-direction: column;
+            // width: 50%;
+            .aside_section{
+                width: 30%;
+                .aside_elements{
+                    width: 60%;
+                }
+
+            }
+            .profile_container{
+                width: 70%;
+                .profile_edit_pic_password{
+                    .div_save_changes{
+                        margin-top: 15%;
+                    }
+                }
+                   
+            }
+            .edit_personal_info{
+                width: 100%;
+                
+               
+              
+            }
+        }
+    }
+
+
+    }
+       

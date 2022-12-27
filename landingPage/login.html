@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="script/main.js" defer></script>
+  <script src="script/validation.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image_section">
+      <img src="./assests/img1.png" alt="" class="landing_page_bg sliding_images">
+
+
+      <div class="moto_left" id="moto_heading">
+        <h1>
+          We Make healing Simple
+        </h1>
+      </div>
+      <div class="logo_left">
+        <img src="./assests/Group 3061logo_white.png" alt="">
+
+
+      </div>
+      <div class="sliding_circles">
+        <div class="div_cirle circle1 " onclick="slide('btn1')"></div>
+        <div class="div_cirle circle2" onclick="slide('btn2')"></div>
+        <div class="div_cirle circle3" onclick="slide('btn3')"></div>
+        <div class="div_cirle circle4" onclick="slide('btn4')"></div>
+      </div>
+
+    </div>
+    <div class="signup_section">
+      <div class="logo_moto">
+        <div class="logo">
+          <img src="./assests/logo.png" id="sing_up_logo">
+        </div>
+
+        <div class="moto">
+          <h2>Login page <span id="trademark"><sup>TM</sup></h2></span>
+        </div>
+
+      </div>
+      <div class="signup_box">
+        <form class="login_in_form" type="get">
+
+          <label for="email" class="labels_signups">Email</label>
+          <input class="input_boxes email_box" type="email" id="email_login" id="">
+          <label for="password" class="labels_signups">Password</label>
+          <input class="input_boxes password_box" type="password" id="password_login" id="">
+          <a href="profile.html">
+          <button class="button" onclick="checkLogin()">Log In</button></a>
+          <div class="error_login"></div>
+          <div class="remember_forget_pass">
+            <span><input type="checkbox"><span class="remember_me"> Remember me   </span>
+            </span>
+            <span><a href="forget.html">Forget Password?</a></span>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

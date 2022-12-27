@@ -1,0 +1,417 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    // border: 1px solid red;
+}
+@import "profile";
+@import "login";
+@import "variables";
+@import "reset";
+
+
+.container {
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: #f7f7f7;
+    width: 100%;
+    // height: 100vh;
+    .image_section {
+        position: relative;
+        width: 100%;
+    }
+    .landing_page_bg {
+        width: 100%;
+        // height: 68rem;
+    }
+
+    .moto_left {
+        position: absolute;
+        // width: 667px;
+        // height: 335px;
+        left: 55px;
+        top: 118px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 102px;
+        color: white;
+        width: 50%;
+    }
+
+    #moto_heading {
+        color: #d2deea;
+        display: block;
+    }
+    .logo_left {
+        position: absolute;
+        top: 90%;
+        left: 10%;
+    }
+    .sliding_circles {
+        position: absolute;
+        display: flex;
+        padding: 5px 0rem;
+        margin: -8% 0% 0% 40%;
+
+        .div_cirle {
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 0.5rem;
+        }
+    }
+
+    .signup_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .logo_moto {
+            display: flex;
+            justify-content: center;
+
+            gap: 0.8rem;
+
+            .logo {
+            }
+            .moto {
+                #trademark {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .signup_box {
+            width: 70%;
+            .error {
+                color: red;
+            }
+            .input_boxes {
+                // width: 100%;
+                // width: 80%;
+                padding: 0.5rem;
+                border: $border_1px #bdbdbd;
+                border-radius: 0.5rem;
+                margin-top: 0.2rem;
+            }
+            .labels_signups {
+                display: block;
+
+                margin-top: 0.5rem;
+                color: $blue_color;
+            }
+            .button {
+                display: block;
+                width: 100%;
+
+                // padding: $padding_1rem;
+                // height: 3.4rem;
+                background: $blue_color;
+                border-radius: 0.5rem;
+                margin-top: 0.5rem;
+                color: white;
+                margin-top: 2rem;
+            }
+            .check_box_tnc {
+                margin-top: 0.5rem;
+            }
+            // #singup_tnc_chk {
+            //     width: 10%;
+            //     margin: 1rem;
+            // }
+            .login_btn {
+                background-color: transparent;
+                box-sizing: border-box;
+                border: 1.5px solid $blue_color;
+                border-radius: 0.5rem;
+                text-align: center;
+                letter-spacing: 0.005em;
+
+                color: $blue_color;
+            }
+            .terms_and_conditions {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.8rem;
+                line-height: 1rem;
+
+                text-align: center;
+
+                color: #788292;
+
+                .tnc_link {
+                    font-weight: 600;
+                    text-decoration: underline;
+                    color: $blue_color;
+                }
+            }
+            .login_area {
+                margin-top: 10%;
+
+                .p_login_area {
+                    text-align: center;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #788292;
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+            h3 {
+                margin-top: 4rem;
+                color: $blue_color;
+            }
+            .send_email {
+                border-top: $border_1px#D2DEEA;
+                p {
+                    margin-top: 1rem;
+                    color: #788292;
+                }
+                .labels_signup {
+                    // margin-top: 1rem;
+                }
+                .transparent_btn {
+                    background-color: transparent;
+                    // padding: $padding_1rem;
+                    width: 100%;
+                    // margin: 0.5rem;
+
+                    display: block;
+
+                    border-radius: 0.5rem;
+                    // margin: 0.5rem;
+
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-size: 1rem;
+                    line-height: 120%;
+                    // margin-top: 80%;
+                }
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media screen and(max-width:1000px) {
+    .container {
+        grid-template-columns: 1fr;
+        position: relative;
+
+        .image_section {
+            .landing_page_bg {
+                min-height: 490px;
+                // height: 68rem;
+            }
+
+            #moto_heading {
+                display: none;
+            }
+            .logo_left {
+                display: none;
+            }
+            .sliding_circles {
+                display: none;
+            }
+        }
+
+        .signup_section {
+            position: absolute;
+            top: 22%;
+            left: 30%;
+        }
+    }
+}
+@media screen and(max-width:560px) {
+    html {
+        font-size: 80%;
+    }
+    .container {
+        .left{
+            left: 0%;
+        }
+        .signup_section {
+            position: absolute;
+            top: 15%;
+            left: 20%;
+        }
+    }
+}
+@media screen and(max-width:300px) {
+    html {
+        font-size: 80%;
+    }
+    .container {
+        .signup_section {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            .signup_box{
+                .input_boxes {
+                    width: 90%;
+               
+                }
+            }
+          
+          
+        }
+    }
+}
+
+
+// @media screen and (max-width: 768px) {
+//     html {
+//         font-size: 90%;
+//     }
+//     body {
+//         background-image: url(../assests/img1.png);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         max-width: 100%;
+
+//         .container {
+//             position: relative;
+
+//             .image_section {
+//                 display: none;
+
+//             }
+
+//             .signup_section {
+//                 position: absolute;
+//                 // padding: 0px 15rem;
+//                 margin-top: 15%;
+//                 // top: 30%;
+//                 .moto{
+//                     h2{
+//                         margin-top: 1rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 800px) {
+//     html {
+//         font-size: 90%;
+//     }
+//     body {
+//         h1 {
+//             display: none;
+//         }
+//         .container {
+//             grid-template-columns: 1fr;
+
+//             // width: 100vw;
+//             .landing_page_bg {
+//                 max-width: 100%;
+//                 // height: 68rem;
+//             }
+
+//             .image_section {
+//                 opacity: 0.5;
+//                 position: relative;
+//                 background-size: cover;
+//                 .moto_left {
+//                     top: 2%;
+//                     // width: 80%;
+//                     // line-height: 120px;
+//                     // left: 25%;
+//                 }
+//                 .logo_left {
+//                     display: none;
+//                     // position: absolute;
+//                     // top: 10%;
+//                     // left: 70%;
+//                 }
+//             }
+
+//             .signup_section {
+//                 position: absolute;
+//                 padding: 0px 15rem;
+//                 margin-top: 2rem;
+//                 top: 30%;
+//             }
+
+//             .logo_moto {
+//             }
+//             form {
+//                 display: flex;
+//                 flex-direction: column;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 600px) {
+//     html {
+//         .container {
+//             .signup_section {
+//                 position: absolute;
+//                 padding: 0 6rem;
+//                 margin-top: 2rem;
+//                 margin-left: 1rem;
+//                 top: 0%;
+
+//                 .signup_box {
+//                     .logo_moto {
+//                     }
+//                     form {
+//                         display: flex;
+//                         flex-direction: column;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 400px) {
+//     html {
+//         font-size: 60%;
+//     }
+//     .container {
+//         .signup_section {
+//             position: absolute;
+//             padding: 0 8rem;
+//             // margin-top: 2rem;
+//             top: 0%;
+
+//             .signup_box {
+//                 .logo_moto {
+//                 }
+//                 form {
+//                     display: flex;
+//                     flex-direction: column;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 300px) {
+//     .container {
+//         // background-color: red;
+//         .signup_section {
+//             padding: 0rem 2rem;
+
+//             .signup_box {
+//                 .logo_moto {
+
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/main.js" defer></script>
+    <script src="script/validation.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image_section">
+            <img src="assests/img1.png" alt="" class="landing_page_bg sliding_images">
+
+
+            <div class="moto_left" id="moto_heading">
+                <h1>
+                    We Make healing Simple
+                </h1>
+            </div>
+            <div class="logo_left">
+                <img src="assests/Group 3061logo_white.png" alt="">
+
+
+            </div>
+            <div class="sliding_circles">
+                <div class="div_cirle circle1 " onclick="slide('btn1')"></div>
+                <div class="div_cirle circle2" onclick="slide('btn2')"></div>
+                <div class="div_cirle circle3" onclick="slide('btn3')"></div>
+                <div class="div_cirle circle4" onclick="slide('btn4')"></div>
+            </div>
+
+        </div>
+        <div class="signup_section left">
+            <div class="logo_moto">
+                <div class="logo">
+                    <img src="assests/logo.png" id="sing_up_logo">
+                </div>
+
+                <div class="moto">
+                    <h2>BRAND<span id="trademark"><sup>TM</sup></h2></span>
+                </div>
+
+            </div>
+            <div class="forget_password_disc signup_box">
+                <h3>
+                    Forgot Password
+                </h3>
+                <!-- <div class="send_email"> -->
+                <p>
+                    Please, enter your email address.
+                    You will receive a link to create a new password via email.
+                </p>
+             </div>
+            
+            <div class="signup_box">
+               <form class="forget_password_form" type="submit">
+
+
+                    <label for="email" class="labels_signups">Email</label>
+                    <input class="input_boxes email_box" type="email" id="forget_email" id="" placeholder="example@yahoo.com" >
+
+                    <a href="login.html">
+                        <button type="submit" class="button" onclick="forgetPassword()">Send</button></a>
+
+                    <div class="error_forget"></div>
+                    <div class="login_area">
+
+                        <button class="login_btn button"><a href="index.html">Cancel</a> </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="script/validation.js"></script>
+</body>
+
+</html>
